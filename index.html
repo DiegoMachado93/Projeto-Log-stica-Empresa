@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="menu">
+            <h1 class="title">Controle de Estoque</h1>
+            <div class="grid">
+                <div class="grid-item" onclick="expandSection('enderecar')">
+                    <img src="https://cdn-icons-png.flaticon.com/256/1311/1311144.png" alt="Endereçar Produto">
+                    <p>Endereçar Produto</p>
+                </div>
+                <div class="grid-item" onclick="expandSection('buscar')">
+                    <img src="https://cdn-icons-png.flaticon.com/256/1265/1265775.png" alt="Buscar">
+                    <p>Buscar</p>
+                </div>
+                <div class="grid-item" onclick="expandSection('ranking')">
+                    <img src="https://cdn-icons-png.flaticon.com/256/3162/3162263.png" alt="Mostrar Ranking">
+                    <p>Mostrar Ranking</p>
+                </div>
+                <div class="grid-item" onclick="expandSection('locacoes')">
+                    <img src="https://cdn-icons-png.flaticon.com/256/995/995330.png" alt="Filtrar Locações VAGAS">
+                    <p>Filtrar Locações VAGAS</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://cdn-icons-png.flaticon.com/256/249/249168.png" alt="In Development">
+                    <p>in development</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://cdn-icons-png.flaticon.com/256/249/249168.png" alt="In Development">
+                    <p>in development</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="enderecar" class="section section-form">
+            <button class="back-btn" onclick="showMenu()">Voltar</button>
+            <h2>Endereçar Produto</h2>
+            <div class="form-container">
+                <div class="form-field">
+                    <input type="text" id="sku" placeholder="SKU">
+                </div>
+                <div class="form-field">
+                    <input type="text" id="local" placeholder="Local">
+                </div>
+                <div class="form-field">
+                    <input type="text" id="local-antigo" placeholder="Local Antigo">
+                </div>
+                <div class="form-field">
+                    <input type="text" id="responsavel" placeholder="Responsavel">
+                </div>
+                <div class="form-field">
+                    <input type="text" id="data" placeholder="Data">
+                </div>
+            </div>
+        </div>
+
+        <div id="buscar" class="section">
+            <button class="back-btn" onclick="showMenu()">Voltar</button>
+            <h2>Buscar</h2>
+            <!-- Conteúdo específico da seção -->
+        </div>
+
+        <div id="ranking" class="section">
+            <button class="back-btn" onclick="showMenu()">Voltar</button>
+            <h2>Mostrar Ranking</h2>
+            <!-- Conteúdo específico da seção -->
+        </div>
+
+        <div id="locacoes" class="section">
+            <button class="back-btn" onclick="showMenu()">Voltar</button>
+            <h2>Filtrar Locações VAGAS</h2>
+            <!-- Conteúdo específico da seção -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

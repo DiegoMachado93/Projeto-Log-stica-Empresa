@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.clubefii.com.br/img/clubefii_news/segmentos/logisticos-industriais/logisticos-industriais_45.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu, .section-form {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    backdrop-filter: blur(5px); /* Adicionei um desfoque ao fundo do menu */
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    max-width: 50px;
+    height: auto;
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+}
+
+.section {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-form {
+    display: none;
+}
+
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000; /* Para garantir que o botão esteja sempre no topo */
+}
+
+.back-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-field {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-field input {
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100px; /* Ajuste conforme necessário */
+}
